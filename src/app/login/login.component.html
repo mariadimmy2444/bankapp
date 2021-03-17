@@ -1,0 +1,28 @@
+<style>
+    #clr {
+        background-color: rgb(53, 207, 235);
+        width: 7cm;
+    }
+</style>
+<div class="containor">
+    <div class="row">
+        <h1 id="clr">Welcome sbk</h1>
+    </div>
+    <!-- {{acno}} -->
+    <form>
+        <div class="mb-3">
+            <label for="acno" class="form-label">Account Number</label>
+            <input type="text" [(ngModel)]="acno" name="acno" class="form-control" id="acno" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your account number with anyone else.</div>
+        </div>
+        <div class="mb-3">
+            <label for="pwd" class="form-label">Password</label>
+            <input type="password" [(ngModel)]="pwd" name="pwd" class="form-control" id="pwd">
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="button" (click)="login()" class="btn btn-primary">Submit</button>
+        <a href="http://localhost:4200/register">Registration</a>
+    </form>

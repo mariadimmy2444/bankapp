@@ -1,0 +1,33 @@
+<style>
+    #clr {
+        background-color: rgb(53, 207, 235);
+        width: 7cm;
+    }
+</style>
+<div class="containor">
+    <div class="row">
+        <!-- <dic class="col-4"></dic> -->
+        <!-- <dic class="col-4"> -->
+            <h1 id="clr">Register</h1>
+        <!-- </dic> -->
+        <!-- <dic class="col-4"></dic> -->
+
+
+    </div>
+
+    <form>
+        <div class="mb-3">
+            <label for="uname" class="form-label">UserName</label>
+            <input type="text" class="form-control" id="uname" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="acno" class="form-label">Account Number</label>
+            <input type="text" class="form-control" id="acno" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="pwd" class="form-label">Password</label>
+            <input type="password" class="form-control" id="pwd">
+        </div>
+        <button type="button" (click)="login()" class="btn btn-primary">Submit</button>
+        
+    </form>
